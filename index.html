@@ -17,7 +17,7 @@
       }
     </style>
     <meta charset="utf-8">
-    <script src = "http://d3js.org/d3.v3.min.js"></script>
+    <script src = "https://d3js.org/d3.v3.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
       "use strict";
@@ -86,9 +86,9 @@
             let nextCircle = function() {
               if (counter < num) {
                 let coords = polarToRect(rho[counter], theta[counter]);
-                let x = 1.6*coords[0];
-                let y = 1.6*coords[1];
-                addCircle(svg, x, y, 2.5, "white");
+                let x = 2.5*coords[0];
+                let y = 2.5*coords[1];
+                addCircle(svg, x, y, 3, "white");
               }
               else if (counter > (num + 50)){
                 counter = -1;
